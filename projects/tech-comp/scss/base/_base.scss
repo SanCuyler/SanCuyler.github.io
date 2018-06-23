@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul,
+ol{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: $dark-font;
+}
+
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  color: $dark-font;
+  background-color: #f2f2f2;
+}
+
+.dark-bg{
+  background-color: $dark-font;
+  color: $silver;
+}

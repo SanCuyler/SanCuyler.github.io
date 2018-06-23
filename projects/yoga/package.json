@@ -1,0 +1,15 @@
+{
+  "name": "yoga",
+  "version": "1.0.0",
+  "description": "Yoga Website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss  css/main.css -w"
+  },
+  "author": "Santonio",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "tech-comp",
+  "version": "1.0.0",
+  "description": "Tech Company",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss  css/main.css -w"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Santonio",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

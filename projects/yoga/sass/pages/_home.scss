@@ -1,0 +1,52 @@
+.section{
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $mid-break){
+    width: 50%;
+    height: 363px;
+    float: left;
+  }
+
+  h2{
+    padding-bottom: 10px;
+  }
+
+  p{
+    margin-bottom: 10px;
+  }
+
+  &__beginner{
+    background-image:linear-gradient(to right bottom, rgba($black, .5), rgba($black, .5)), url('../img/beginner-yoga.jpg');
+    @include backgroundImage;
+  }
+
+  &__inter{
+    background-image:linear-gradient(to right bottom, rgba($black, .5), rgba($black, .5)), url('../img/interm-yoga.jpg');
+    @include backgroundImage;
+  }
+
+  &__expert{
+    background-image:linear-gradient(to right bottom, rgba($black, .5), rgba($black, .5)), url('../img/expert-yoga.jpg');
+    @include backgroundImage;
+  }
+
+  &__kids{
+    background-image:linear-gradient(to right bottom, rgba($black, .5), rgba($black, .5)), url('../img/kids-yoga.jpg');
+    @include backgroundImage;
+  }
+}
+
+.classes{
+  @media (min-width: $big-break){
+    padding: 50px;
+  }
+}
+
+// .bottom-container{
+//   @media (min-width: $mid-break){
+//     display: flex;
+//     justify-content: space-around;
+//   }
+// }

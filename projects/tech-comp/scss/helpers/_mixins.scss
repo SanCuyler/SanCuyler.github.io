@@ -1,0 +1,7 @@
+@mixin heading-decor{
+  font-size: 26px;
+  margin-bottom: 20px;
+  border-bottom: $heading-border;
+  display: inline-block;
+  padding: 10px 0;
+}

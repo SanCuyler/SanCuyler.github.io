@@ -1,0 +1,75 @@
+.services-header{
+  background-image:linear-gradient(to right, rgba($dark-blue, .8), rgba($light-blue, .8)), url('../img/services-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  color: $white;
+  position: relative;
+
+  &--name{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.service-page{
+  padding: 80px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid $dark-font;
+
+  &:last-child{
+    border: none;
+  }
+
+  @media (max-width: $break){
+    flex-direction: column;
+  }
+
+  &__img{
+
+    img{
+      width: 100%;
+      display: block;
+
+      @media (max-width: $break){
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__content{
+    padding: 20px;
+    position: relative;
+
+    @media (max-width: $break){
+      padding: 20px;
+      width: 100%;
+    }
+
+    h2{
+      font-size: 35px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    a{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

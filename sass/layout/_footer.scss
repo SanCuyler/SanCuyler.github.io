@@ -1,0 +1,23 @@
+.footer{
+  background-color: $gray-dark;
+  padding: 5px;
+
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    color: $gray-med;
+    font-size: 20px;
+
+    &:hover{
+      color: $gray-light;
+    }
+  }
+}

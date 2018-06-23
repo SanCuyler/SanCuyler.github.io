@@ -1,0 +1,18 @@
+{
+  "name": "vacation_island",
+  "version": "1.0.0",
+  "description": "Vacation Island",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {
+    "postcss-cli": "^5.0.1"
+  },
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "prefix:css": "postcss --use autoprefixer -b \"last 15 versions\" css/main.css -o css/final.css"
+  },
+  "author": "Santonio",
+  "license": "ISC"
+}

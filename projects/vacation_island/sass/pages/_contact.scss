@@ -1,0 +1,78 @@
+.contact{
+
+  &__header{
+    @include center(0);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: tomato;
+    color: $white;
+    background-image: url('../img/contact-bg.jpg');
+    background-size: cover;
+    background-position: top;
+
+    @media only screen and (min-width: $small) {
+      background-position: center;
+    }
+
+    @media only screen and (min-width: $medium) {
+      height: 75vh;
+    }
+  }
+
+  &__info{
+    width: 90%;
+    @include center(0px);
+
+    @media only screen and (min-width: $medium) {
+      padding: 30px;
+      width: 50%;
+      float: left;
+    }
+
+    p{
+      padding-bottom: 10px;
+    }
+    li{
+      list-style: circle;
+      margin-left: 20px;
+      padding: 10px;
+    }
+    a{
+      margin: 20px 0;
+    }
+  }
+
+  &__form{
+    width: 80%;
+    @include center(20px);
+
+    @media only screen and (min-width: $medium) {
+      padding: 30px;
+      width: 50%;
+      float: right;
+    }
+
+    input[type="text"],
+    textarea,
+    button{
+      width: 100%;
+      display: block;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    button{
+      background-color: $blue;
+      color: $gray;
+      cursor: pointer;
+      border: none;
+      padding: 10px;
+      text-transform: uppercase;
+      border-radius: 10px;
+    }
+  }
+}

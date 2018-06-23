@@ -1,0 +1,26 @@
+.main-nav{
+  display: flex;
+  justify-content: space-around;
+
+  li{
+    width: 100%;
+    display: inline-block;
+    background-color: $dark-font;
+    text-align: center;
+    padding: 10px 0;
+    border-right: 1px solid $silver;
+  }
+
+  &__items{
+    width: 100%;
+    color: $silver;
+    text-transform: uppercase;
+    display: inline-block;
+
+    &:hover,
+    &:focus{
+      font-weight: 800;
+      color: #f2f2f2;
+    }
+  }
+}

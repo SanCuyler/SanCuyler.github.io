@@ -1,0 +1,18 @@
+.footer{
+  background-color: $silver;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+
+  &__copy{
+    padding-top: 8px;
+  }
+
+  ul{
+    font-size: 30px;
+    li{
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+}

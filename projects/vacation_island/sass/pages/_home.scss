@@ -1,0 +1,120 @@
+.intro{
+  height: 250px;
+  background-image: url('../img/intro-bg.jpg');
+  background-position: center;
+  background-size: cover;
+
+  @media only screen and (min-width: $small) {
+    height: 300px;
+  }
+
+  @media only screen and (min-width: $medium) {
+    height: 350px;
+  }
+
+  @media only screen and (min-width: $big) {
+    height: 500px;
+  }
+}
+
+.home-act{
+  padding: 10px;
+
+  a{
+    padding: 10px 8px;
+    &:hover{
+      border-bottom: 5px solid $blue;
+    }
+  }
+
+  &__info{
+    position: relative;
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+
+    @media only screen and (min-width: $small) {
+      float: left;
+      width: 48%;
+      margin: 1%;
+    }
+
+    @media only screen and (min-width: $big) {
+      height: 300px;
+    }
+  }
+
+  h3{
+    background-color: rgba($black, .5);
+    color: $white;
+    padding: 4px;
+    text-transform: uppercase;
+  }
+}
+
+.concert{
+  background-image: url('../img/concert-act.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.wine{
+  background-image: url('../img/wine-act.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.golf{
+  background-image: url('../img/golf-act.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.snork{
+  background-image: url('../img/snorkeling-act.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/**************************************
+PACKAGES SECTION
+**************************************/
+
+
+.packages{
+  padding: 40px 0 10px 0;
+  background-color: $white;
+
+  @media only screen and (min-width: $medium) {
+    margin-bottom: 40px;
+  }
+
+  &__item{
+    background-color: $blue;
+    color: $white;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 10px $black;
+
+    @media only screen and (min-width: $medium) {
+      width: 48%;
+      float: left;
+      border: none;
+      margin: 1%;
+    }
+
+    h4{
+      margin: 20px 0;
+    }
+
+    a{
+      margin-top: 20px;
+    }
+  }
+}

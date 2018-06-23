@@ -1,0 +1,65 @@
+.header{
+  position: relative;
+  padding: 10px;
+  border-bottom: 15px solid $blue;
+
+  &__name{
+    font-size: 20px;
+    text-align: center;
+
+    @media only screen and (min-width: $medium) {
+      font-size: 35px;
+    }
+  }
+
+  &__menu{
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+    @media only screen and (min-width: $medium) {
+      font-size: 15px;
+    }
+  }
+
+  &__drop{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $blue;
+    /*************************
+    Close Menu
+    **************************/
+    display: none;
+    overflow: hidden;
+
+    li{
+      width: 100%;
+      &:not(:last-child){
+        border-bottom: 1px solid $gray;
+      }
+    }
+
+    a{
+      background-color: $blue;
+      color: $gray;
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 20px 40px;
+
+      &:hover,
+      &:focus{
+        background-color: $gray;
+        color: $blue;
+      }
+    }
+  }
+}
+
+.open{
+  display: block;
+}

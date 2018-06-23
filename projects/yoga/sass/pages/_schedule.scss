@@ -1,0 +1,26 @@
+.schedule{
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba($black, .2), rgba($black, .2)), url('../img/yoga-building.jpg');
+  @include backgroundImage;
+
+  &__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h2{
+      text-align: center;
+      font-size: 35px;
+      padding-bottom: 20px;
+    }
+
+    h5{
+      font-size: 20px;
+      padding: 10px 0;
+    }
+  }
+
+
+}

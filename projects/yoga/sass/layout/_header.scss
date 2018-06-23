@@ -1,0 +1,28 @@
+.header{
+  background-image: linear-gradient(to right bottom, rgba($black, .2), rgba($black, .2)), url('../img/yoga-header.jpg');
+  background-position: right;
+  background-size: cover;
+  color: $white;
+  height: 75vh;
+  position: relative;
+  text-align: center;
+
+  &__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__name{
+    font-size: 27px;
+    text-transform: uppercase;
+
+    &--sub{
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+}

@@ -1,0 +1,56 @@
+.fun{
+  height: 45vh;
+  padding: 30px;
+  background-color: $font-color;
+  background-image: linear-gradient(to right, rgba($black, .5), rgba($black, .5)), url('../img/relax-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: $white;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media only screen and (min-width: $small) {
+    height: 70vh;
+  }
+
+  p{
+    font-size: 13px;
+    padding: 5px;
+    font-weight: 300;
+  }
+}
+
+.activity{
+  @include center(40px);
+  width: 90%;
+
+  &__items{
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: $small) {
+      float: left;
+      width: 48%;
+      margin: 1%
+    }
+
+    @media only screen and (min-width: $medium) {
+      float: left;
+      width: 25%;
+      margin: 4%
+    }
+
+    img{
+      width: 100%;
+      // padding: 5px 0;
+      box-shadow: 5px 5px 10px $black;
+    }
+
+    p{
+      padding: 10px;
+    }
+  }
+}

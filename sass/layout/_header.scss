@@ -1,0 +1,41 @@
+.header{
+  background-image:linear-gradient(to right bottom, rgba($indigo, .9), rgba($indigo, .9)), url('../img/port-bg.jpg');
+  background-size: cover;
+  background-position: top;
+  height: 50vh;
+  color: $white;
+  position: relative;
+  @media (min-width: $big-break) {
+    height: 100vh;
+  }
+
+  &__intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+
+    &--one{
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+
+      @media (min-width: $big-break) {
+        font-size: 60px;
+      }
+    }
+
+    &--two{
+      color: $gray-med;
+      font-size: 18px;
+      font-weight: 300;
+
+      @media (min-width: $big-break) {
+        font-size: 36px;
+      }
+    }
+  }
+}

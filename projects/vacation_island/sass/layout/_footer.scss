@@ -1,0 +1,13 @@
+.footer{
+  background-color: orangered;
+  padding: 10px;
+
+  &__social{
+    display: flex;
+    justify-content: space-around;
+
+    p{
+      font-size: 20px;
+    }
+  }
+}
