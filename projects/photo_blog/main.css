@@ -1,0 +1,255 @@
+/**Colors**/
+/* black: #212322;
+dark green: #678f6f;
+tan: #d9dbaa;
+dark tan: #c3d2a2;
+light brown: #8a795b; */
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clear::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+ul,
+ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Crimson Text', serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #212322;;
+}
+
+/**********************
+HEADER SECTION
+*********************/
+.header{
+  height: 50vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(217, 219, 170, 0.3)), to(rgba(195, 210, 162, 0.3))), url('img/bg-img.jpg');
+  background-image: linear-gradient(to right bottom, rgba(217, 219, 170, 0.3), rgba(195, 210, 162, 0.3)), url('img/bg-img.jpg');
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.header__content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__name{
+  margin-top:0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.work{
+  text-decoration: none;
+  color: #212322;;
+  background-color: #d9dbaa;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 10rem;
+  display: inline-block;
+}
+
+.work:hover,
+.more__photo:hover{
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+          box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+}
+
+.work:active,
+.more__photo:active{
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, .5);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, .5);
+}
+
+/**********************
+ABOUT SECTION
+*********************/
+.about{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+.about h2{
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.about__pic{
+  margin-bottom: 2rem;
+}
+
+.about__pic img{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  border: 1rem solid #8a795b;
+}
+
+.about__me{
+  margin-bottom: 3rem;
+}
+
+/**********************
+PHOTO SECTION
+*********************/
+#photos{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#photos h2{
+  font-size: 4rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #678f6f;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.more__photo{
+  text-decoration: none;
+  color: #212322;;
+  background-color: #d9dbaa;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 10rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.photo__container{
+
+}
+
+.photo__img img{
+  width: 100%;
+  padding: 1rem;
+}
+
+/**********************
+FOOTER SECTION
+*********************/
+footer{
+  background-color: #8a795b;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo{
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.social__links a{
+  text-decoration: none;
+  color: #212322;
+}
+
+.social__links li{
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.social__links a:hover{
+  border-bottom: 2px solid #212322;
+}
+
+/**********************
+MEDIA QUERY
+*********************/
+
+@media (min-width: 1100px){
+
+  html{
+    font-size: 80%;
+  }
+
+  .about h2,
+  #photos h2{
+    margin-bottom: 50px;
+  }
+  /********
+  HEADER SECTTION
+  *********/
+
+  .header{
+    height: 100vh;
+  }
+
+  .name{
+    font-size: 40px;
+  }
+
+  /**********************
+  ABOUT SECTION
+  *********************/
+
+  .pic-container{
+    width: 50%;
+    float: right;
+  }
+
+  .about__pic img{
+    width: 85%;
+    border: 7px solid #8a795b;
+  }
+
+  .about__me p,
+  .about__inspiration p{
+    font-size: 25px;
+    text-align: right;
+  }
+
+  /**********************
+  PHOTO SECTION
+  *********************/
+  .photo__img img{
+    width: 50%;
+    height: 523px;
+    float: left;
+  }
+
+  /**********************
+  FOOTER SECTION
+  *********************/
+  footer{
+    padding: 5px;
+  }
+
+
+}
