@@ -1,4 +1,4 @@
-let api = "https:api.giphy.com/v1/gifs/search?q=";
+let api = "https://api.giphy.com/v1/gifs/search?q=";
 let input = document.querySelector(".text_search");
 let form = document.querySelector("form");
 let q = 'gif';
@@ -11,7 +11,7 @@ let getImg = (e) => {
   photoContainer.innerHTML = '';
   input.value = '';
   let request = new XMLHttpRequest();
-  request.open('GET', "https:api.giphy.com/v1/gifs/search?q=" + q + "&api_key=nDEwBcpLAfP6yUebMJO2rWWrm53Jdnoc", true);
+  request.open('GET', "https://api.giphy.com/v1/gifs/search?q=" + q + "&api_key=nDEwBcpLAfP6yUebMJO2rWWrm53Jdnoc", true);
   request.onload = function() {
     let data = JSON.parse(this.response);
     console.log(data);
